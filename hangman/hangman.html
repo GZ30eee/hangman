@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="centered">
+      <div class="wrapper">
+        <div class="content">
+          <h1 id="head">H A N G M A N</h1>
+        </div>
+
+        <link rel="stylesheet" href="hangman.css" />
+      </div>
+
+      <div class="wrapper">
+        <div id="highScoreDisplay"></div>
+        <div id="scoreDisplay"></div>
+        <div id="buttons"></div>
+        <p id="catagoryName"></p>
+        <div id="hold"></div>
+        <p id="mylives"></p>
+        <p id="clue"></p>
+        <canvas id="stickman" class="drawing_stickman"
+          >This Text will show if the Browser does NOT support HTML5 Canvas
+          tag</canvas
+        >
+        <div class="container">
+          <table>
+            <tr>
+              <td>
+                <button
+                  id="reset"
+                  class="button50"
+                  onclick="document.location.reload()"
+                >
+                  R E S E T
+                </button>
+              </td>
+              <td><button id="hint" class="button50">H I N T</button></td>
+              <td><button id="next" class="button50">N E X T</button></td>
+              <td><button id="quitButton" class="button50">Q U I T</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="hangman.js"></script>
+
+    <audio autoplay>
+      <source src="Elevator-music.mp3" type="audio/wav" />
+    </audio>
+  </body>
+</html>
